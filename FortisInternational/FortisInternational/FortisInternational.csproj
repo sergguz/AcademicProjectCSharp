@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{391C2095-E136-4AB9-8289-35F0D4A982F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FortisInternational</RootNamespace>
+    <AssemblyName>FortisInternational</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FortisInternational_bus">
+      <HintPath>..\..\..\Documents\Visual Studio 2015\Projects\FortisInternational_bus\FortisInternational_bus\bin\Debug\FortisInternational_bus.dll</HintPath>
+    </Reference>
+    <Reference Include="FortisInternational_data">
+      <HintPath>..\..\..\Documents\Visual Studio 2015\Projects\FortisInternational_data\FortisInternational_data\bin\Debug\FortisInternational_data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="client\FormBankMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client\FormBankMenu.Designer.cs">
+      <DependentUpon>FormBankMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client\FormClientMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client\FormClientMenu.Designer.cs">
+      <DependentUpon>FormClientMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client\FormCreditCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client\FormCreditCard.Designer.cs">
+      <DependentUpon>FormCreditCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client\FormDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client\FormDeposit.Designer.cs">
+      <DependentUpon>FormDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client\FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client\FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client\FormManageCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client\FormManageCustomers.Designer.cs">
+      <DependentUpon>FormManageCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client\FormWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client\FormWithdraw.Designer.cs">
+      <DependentUpon>FormWithdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="client\FormBankMenu.resx">
+      <DependentUpon>FormBankMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client\FormClientMenu.resx">
+      <DependentUpon>FormClientMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client\FormCreditCard.resx">
+      <DependentUpon>FormCreditCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client\formDeposit.resx">
+      <DependentUpon>FormDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client\FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client\FormManageCustomers.resx">
+      <DependentUpon>FormManageCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client\FormWithdraw.resx">
+      <DependentUpon>FormWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
